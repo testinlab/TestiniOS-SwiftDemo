@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eO1-fZ-guk">
+                                <rect key="frame" x="137" y="97" width="100" height="30"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="fmf-LB-wFz"/>
+                                </constraints>
+                                <state key="normal" title="HTTP Request">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="handleHttpRequestBtnAction" destination="BYZ-38-t0r" eventType="touchUpInside" id="i9m-r9-clb"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ELT-Wo-8PP">
+                                <rect key="frame" x="167" y="135" width="41" height="30"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="sRp-Au-YCn"/>
+                                </constraints>
+                                <state key="normal" title="Crash">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="handleCrashBtnAction" destination="BYZ-38-t0r" eventType="touchUpInside" id="s47-2z-ehF"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w72-5b-Wr1">
+                                <rect key="frame" x="126" y="175" width="122" height="30"/>
+                                <animations/>
+                                <state key="normal" title="Handle Exception">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="handleExceptionBtnAction" destination="BYZ-38-t0r" eventType="touchUpInside" id="gGt-eM-jva"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t10-JB-WdD">
+                                <rect key="frame" x="118" y="617" width="139" height="30"/>
+                                <animations/>
+                                <state key="normal" title="http://www.testin.cn">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="handleURLBtnAction" destination="BYZ-38-t0r" eventType="touchUpInside" id="s9T-uc-Zpi"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hMY-EC-nHC">
+                                <rect key="frame" x="151" y="213" width="73" height="30"/>
+                                <animations/>
+                                <state key="normal" title="CrumbLog">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="handleCrumbLogBtnAction" destination="BYZ-38-t0r" eventType="touchUpInside" id="4F0-xM-D1S"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U3W-u5-wVT">
+                                <rect key="frame" x="112" y="256" width="151" height="30"/>
+                                <animations/>
+                                <state key="normal" title="Report HTTP Request">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="handleReportHttpRequestBtnAction" destination="BYZ-38-t0r" eventType="touchUpInside" id="CBW-4U-Qhe"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="ELT-Wo-8PP" firstAttribute="top" secondItem="eO1-fZ-guk" secondAttribute="bottom" constant="8" symbolic="YES" id="4vj-y5-NFI"/>
+                            <constraint firstItem="hMY-EC-nHC" firstAttribute="centerX" secondItem="w72-5b-Wr1" secondAttribute="centerX" id="5Dg-En-N5D"/>
+                            <constraint firstItem="eO1-fZ-guk" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ClD-lL-OFP"/>
+                            <constraint firstItem="U3W-u5-wVT" firstAttribute="centerX" secondItem="hMY-EC-nHC" secondAttribute="centerX" id="GC5-ex-bSC"/>
+                            <constraint firstItem="eO1-fZ-guk" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="33" id="JQN-nE-dLr"/>
+                            <constraint firstItem="w72-5b-Wr1" firstAttribute="centerX" secondItem="ELT-Wo-8PP" secondAttribute="centerX" id="RPA-aE-zMj"/>
+                            <constraint firstItem="hMY-EC-nHC" firstAttribute="top" secondItem="w72-5b-Wr1" secondAttribute="bottom" constant="8" symbolic="YES" id="eww-7Y-u4Y"/>
+                            <constraint firstItem="ELT-Wo-8PP" firstAttribute="centerX" secondItem="eO1-fZ-guk" secondAttribute="centerX" id="hKv-rU-dK9"/>
+                            <constraint firstItem="U3W-u5-wVT" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="256" id="sZo-c1-50r"/>
+                            <constraint firstItem="hMY-EC-nHC" firstAttribute="centerX" secondItem="t10-JB-WdD" secondAttribute="centerX" id="wsy-hi-ycD"/>
+                            <constraint firstItem="U3W-u5-wVT" firstAttribute="top" secondItem="hMY-EC-nHC" secondAttribute="bottom" constant="13" id="zPP-0X-jEs"/>
+                            <constraint firstAttribute="bottom" secondItem="t10-JB-WdD" secondAttribute="bottom" constant="20" symbolic="YES" id="zqy-Fi-frH"/>
+                        </constraints>
+                    </view>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="crashBtn_" destination="ELT-Wo-8PP" id="ek2-wh-Oiw"/>
+                        <outlet property="crumbLog_" destination="hMY-EC-nHC" id="lNh-6j-LFB"/>
+                        <outlet property="handleExceptionBtn_" destination="w72-5b-Wr1" id="8cj-m0-iUn"/>
+                        <outlet property="httpRequestBtn_" destination="eO1-fZ-guk" id="ygj-rt-O55"/>
+                        <outlet property="reportHttpRequest_" destination="U3W-u5-wVT" id="AIZ-65-6oq"/>
+                        <outlet property="testinURL_" destination="t10-JB-WdD" id="WLQ-QD-Jyc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
